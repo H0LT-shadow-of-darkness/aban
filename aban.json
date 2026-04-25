@@ -1,0 +1,22 @@
+{
+  "name": "aban",
+  "version": "1.0",
+  "transport": {
+    "type": "tcp",
+    "default_port": 6969
+  },
+  "encoding": {
+    "type": "binary",
+    "endianness": "big"
+  },
+  "header": {
+    "size_bytes": 2,
+    "fields": [
+      { "name": "payload_length", "type": "uint16" }
+    ]
+  },
+  "payload": {
+    "type": "string",
+    "max_size_bytes": 1022
+  }
+}
